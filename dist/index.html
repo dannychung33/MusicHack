@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tone.js Keyboard</title>
+  </head>
+  <style>
+    #keyboard {
+      display: flex;
+    }
+
+    .key {
+      width: 50px;
+      height: 200px;
+      border: 1px solid black;
+    }
+
+    .key:active {
+      background-color: aqua;
+    }
+  </style>
+  <body>
+    <div id="keyboard">
+      <div id="C3" class="key"></div>
+      <div id="D3" class="key"></div>
+      <div id="E3" class="key"></div>
+      <div id="F3" class="key"></div>
+      <div id="G3" class="key"></div>
+      <div id="A3" class="key"></div>
+      <div id="B3" class="key"></div>
+    </div>
+    <script src="https://unpkg.com/tone@13.8.25/build/Tone.js"></script>
+    <script src="../src/index.js" type="module"></script>
+  </body>
+</html>

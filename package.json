@@ -1,0 +1,27 @@
+{
+  "name": "Piano",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Tone.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dannychung33/MusicHack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dannychung33/MusicHack/issues"
+  },
+  "homepage": "https://github.com/dannychung33/MusicHack#readme",
+  "devDependencies": {
+    "webpack": "^5.23.0",
+    "webpack-cli": "^4.5.0"
+  },
+  "dependencies": {
+    "tone": "^14.7.77"
+  }
+}
