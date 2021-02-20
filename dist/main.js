@@ -1,1 +1,1 @@
-(()=>{const e=new Tone.Synth;e.toMaster(),document.querySelectorAll(".key").forEach((t=>{t.addEventListener("mousedown",(()=>{e.triggerAttackRelease(t.id,"10n")}))}))})();
+(()=>{const e=new Tone.Synth;e.toMaster(),document.querySelectorAll(".key").forEach((t=>{t.addEventListener("mousedown",(()=>{e.triggerAttackRelease(t.id,"8n")}))}))})();
