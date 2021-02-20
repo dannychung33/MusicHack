@@ -3,7 +3,7 @@
 // Tone.Synth is a basic synthesizer with a single oscillator
 const synth = new Tone.Synth();
 // Set the tone to sine
-synth.oscillator.type = "triangle";
+synth.oscillator.type = "sine";
 // connect it to the master output (your speakers)
 synth.toMaster();
 
