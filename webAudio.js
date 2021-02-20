@@ -1,3 +1,5 @@
+window.onload = function() {
+
 let audioContext = new (window.AudioContext || window.webkitAudioContext)();
 let oscList = [];
 let masterGainNode = null;
@@ -190,8 +192,9 @@ function setup() {
     } else {
       osc.type = type;
     }
-  
+    if(isFinite(freq)){
     osc.frequency.value = freq;
+    }
     osc.start();
   
     return osc;
@@ -223,3 +226,4 @@ function setup() {
   function changeVolume(event) {
     masterGainNode.gain.value = volumeControl.value
   }
+}
