@@ -24,6 +24,7 @@ function createNoteTable() {
     noteFreq[0]["A#"] = 29.135235094880619;
     noteFreq[0]["B"] = 30.867706328507756;
     
+    noteFreq[2]["C"] = 65.4064;
     noteFreq[2]["C#"] = 69.295657744218024;
     noteFreq[2]["D"] = 73.416191979351890;
     noteFreq[2]["D#"] = 77.781745930520227;

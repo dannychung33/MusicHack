@@ -15,21 +15,42 @@
       width: 50px;
       height: 200px;
       border: 1px solid black;
+      
+      display:inline-block;
+      position:relative;
+      text-align: center;
+      vertical-align: center;
     }
 
     .key:active {
       background-color: aqua;
     }
+
+    .sharp {
+      background-color: black;
+      color: white;
+      width: 30px;
+      height:120px;
+    }
+
+    .stack-top {
+      z-index: 9;
+    }
   </style>
   <body>
     <div id="keyboard">
-      <div id="C3" class="key"></div>
-      <div id="D3" class="key"></div>
-      <div id="E3" class="key"></div>
-      <div id="F3" class="key"></div>
-      <div id="G3" class="key"></div>
-      <div id="A3" class="key"></div>
-      <div id="B3" class="key"></div>
+      <div id="C3" class="key">C</div>
+      <div id="C#3" class="key sharp stack-top">C#</div>
+      <div id="D3" class="key">D</div>
+      <div id="D#3" class="key sharp">D#</div>
+      <div id="E3" class="key">E</div>
+      <div id="F3" class="key">F</div>
+      <div id="F#3" class="key sharp">F#</div>
+      <div id="G3" class="key">G</div>
+      <div id="G#3" class="key sharp">G#</div>
+      <div id="A3" class="key">A</div>
+      <div id="A#3" class="key sharp">A#</div>
+      <div id="B3" class="key">B</div>
     </div>
     <script src="https://unpkg.com/tone@13.8.25/build/Tone.js"></script>
     <script src="../src/index.js" type="module"></script>
