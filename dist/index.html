@@ -9,47 +9,71 @@
   <style>
     #keyboard {
       display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
     }
 
     .key {
-      width: 50px;
-      height: 200px;
-      border: 1px solid black;
-      
-      display:inline-block;
-      position:relative;
-      text-align: center;
-      vertical-align: center;
+      position: relative;
+     width: 60px;
+     height: 180px;
+     border: 1px solid black;
+     border-right: none;
+     background: #fffff0;
+     border-radius: 5px;
+     box-shadow: 0px 3px 5px #666;
+     cursor: pointer;
+     display: flex;
+     justify-content: center;
+     align-items: flex-end;
+     padding-bottom: 10px;
+     font-weight: bold;
     }
 
     .key:active {
       background-color: aqua;
     }
+    .sharp:active {
+      background-color: rgb(0, 255, 13);
+    }
 
     .sharp {
-      background-color: black;
+      position: relative;
+      top: -50px;
+      left: 20.5px;
+      width: 45px;
+      height: 120px;
+      background: black;
+      border-radius: 5px;
+      box-shadow: 0px 3px 5px #666;
+      z-index: 999;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      padding-bottom: 10px;
       color: white;
-      width: 30px;
-      height:120px;
     }
 
-    .stack-top {
-      z-index: 9;
-    }
+    .key:last-child {
+     border-right: 1px solid black;
+  }
+
+  
   </style>
   <body>
     <div id="keyboard">
-      <div id="C3" class="key">C</div>
-      <div id="C#3" class="key sharp stack-top">C#</div>
-      <div id="D3" class="key">D</div>
-      <div id="D#3" class="key sharp">D#</div>
+      <div id="C3" class="key">C<div id="C#3" class="key sharp ">C#</div></div>
+      
+      <div id="D3" class="key">D<div id="D#3" class="key sharp">D#</div></div>
+      
       <div id="E3" class="key">E</div>
-      <div id="F3" class="key">F</div>
-      <div id="F#3" class="key sharp">F#</div>
-      <div id="G3" class="key">G</div>
-      <div id="G#3" class="key sharp">G#</div>
-      <div id="A3" class="key">A</div>
-      <div id="A#3" class="key sharp">A#</div>
+      <div id="F3" class="key">F<div id="F#3" class="key sharp">F#</div></div>
+      
+      <div id="G3" class="key">G<div id="G#3" class="key sharp">G#</div></div>
+      
+      <div id="A3" class="key">A<div id="A#3" class="key sharp">A#</div></div>
+      
       <div id="B3" class="key">B</div>
     </div>
     <script src="https://unpkg.com/tone@13.8.25/build/Tone.js"></script>
