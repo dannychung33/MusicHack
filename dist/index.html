@@ -7,15 +7,19 @@
     <title>Tone.js Keyboard</title>
   </head>
   <style>
-    #keyboard {
-      display: flex;
+   body {
+     /* font-family: 'Roboto', sans-serif; */
+     display: flex;
      justify-content: center;
      align-items: center;
      min-height: 100vh;
-    }
-
-    .key {
-      position: relative;
+}
+ ul {
+     list-style: none;
+     display: flex;
+}
+ ul .key {
+     position: relative;
      width: 60px;
      height: 180px;
      border: 1px solid black;
@@ -29,53 +33,65 @@
      align-items: flex-end;
      padding-bottom: 10px;
      font-weight: bold;
-    }
-
-    .key:active {
-      background-color: aqua;
-    }
-    .sharp:active {
-      background-color: rgb(0, 255, 13);
-    }
-
-    .sharp {
-      position: relative;
-      top: -50px;
-      left: 20.5px;
-      width: 45px;
-      height: 120px;
-      background: black;
-      border-radius: 5px;
-      box-shadow: 0px 3px 5px #666;
-      z-index: 999;
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-      padding-bottom: 10px;
-      color: white;
-    }
-
-    .key:last-child {
+}
+ ul .key:last-child {
      border-right: 1px solid black;
-  }
+}
+  ul .black-key {
+     position: absolute;
+     top: -1px;
+     left: 37.5px;
+     width: 45px;
+     height: 120px;
+     background: black;
+     border-radius: 5px;
+     box-shadow: 0px 3px 5px #666;
+     z-index: 999;
+     display: flex;
+     justify-content: center;
+     align-items: flex-end;
+     padding-bottom: 10px;
+     color: white;
+}
+
+ .key:active {
+  background-color: aquamarine;
+}
+  .black-key:active {
+  background-color: bisque;
+}
 
   
   </style>
   <body>
-    <div id="keyboard">
-      <div id="C3" class="key">C<div id="C#3" class="key sharp ">C#</div></div>
-      
-      <div id="D3" class="key">D<div id="D#3" class="key sharp">D#</div></div>
-      
-      <div id="E3" class="key">E</div>
-      <div id="F3" class="key">F<div id="F#3" class="key sharp">F#</div></div>
-      
-      <div id="G3" class="key">G<div id="G#3" class="key sharp">G#</div></div>
-      
-      <div id="A3" class="key">A<div id="A#3" class="key sharp">A#</div></div>
-      
-      <div id="B3" class="key">B</div>
-    </div>
+    <ul id="piano">
+      <li data-note="C4" class="key">
+        <div data-note="C#4" class="black-key">C#</div>
+        C
+      </li>
+      <li data-note="D4" class="key">
+        <div data-note="D#4" class="black-key">D#</div>
+        D
+      </li>
+      <li data-note="E4" class="key">
+        E
+      </li>
+      <li data-note="F4" class="key">
+        <div data-note="F#4" class="black-key">F#</div>
+        F
+      </li>
+      <li data-note="G4" class="key">
+        <div data-note="G#4" class="black-key">G#</div>
+        G
+      </li>
+      <li data-note="A4" class="key">
+        <div data-note="A#4" class="black-key">A#</div>
+        A
+      </li>
+      <li data-note="B4" class="key">
+        B
+      </li>
+    </ul>
     <script src="https://unpkg.com/tone@13.8.25/build/Tone.js"></script>
     <script src="../src/index.js" type="module"></script>
   </body>
