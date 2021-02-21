@@ -13,6 +13,7 @@ let customWaveform = null;
 let sineTerms = null;
 let cosineTerms = null;
 
+
 function createNoteTable() {
     let noteFreq = [];
     for (let i=0; i< 9; i++) {
@@ -139,10 +140,11 @@ function setup() {
   
       keyList.forEach(function(key) {
           // only selects notes (not sharp or flat)
-        if (key[0].length == 1) {
+        // if (key[0].length == 1) {
           // takes the note and freq from each note array
           octaveElem.appendChild(createKey(key[0], idx, key[1]));
-        }
+
+        // }
       });
       // append the keys <div> to the keyboard
       keyboard.appendChild(octaveElem);
@@ -169,6 +171,10 @@ function setup() {
     keyElement.dataset["octave"] = octave;
     keyElement.dataset["note"] = note;
     keyElement.dataset["frequency"] = freq;
+    if(note.length > 1) {
+      keyElement.classList.add('unNote'); 
+    }
+    
   
     labelElement.innerHTML = note + "<sub>" + octave + "</sub>";
     keyElement.appendChild(labelElement);

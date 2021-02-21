@@ -31,6 +31,11 @@
     -ms-user-select: none;
   }
   
+  .unNote {
+    background-color:black;
+    color: white;
+  }
+
   .key div {
     position: absolute;
     bottom: 0;
