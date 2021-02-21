@@ -7,12 +7,17 @@ console.log(keys);
 keys.forEach((key) => {
     key.addEventListener('mousedown', (e) => {
         console.log(e.target.dataset.note)
-        synth.triggerAttackRelease(e.target.dataset.note, '8n');
+        synth.triggerAttackRelease(e.target.dataset.note, '1n');
         e.target.style.backgroundColor = 'lightblue';
         setTimeout(()=>{
             changeBack(e.target);
         }, 220);
         console.log(e.target)
+    });
+    key.addEventListener('mouseup', (e) => {
+        console.log(e.target.dataset.note)
+        console.log(e.target)
+        synth.triggerRelease();
     });
 });
 
