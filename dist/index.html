@@ -20,7 +20,7 @@
     }
     ul .key {
       position: relative;
-      width: 60px;
+      width: 40px;
       height: 180px;
       border: 1px solid black;
       border-right: none;
@@ -40,8 +40,8 @@
     ul .black-key {
       position: absolute;
       top: -1px;
-      left: 37.5px;
-      width: 45px;
+      left: 26px;
+      width: 30px;
       height: 120px;
       background: black;
       border-radius: 5px;
@@ -56,6 +56,29 @@
   </style>
   <body>
     <ul id="piano">
+      <li data-note="C3" class="key">
+        <div data-note="C#3" class="black-key" id="black-key">C#</div>
+        C
+      </li>
+      <li data-note="D3" class="key">
+        <div data-note="D#3" class="black-key" id="black-key">D#</div>
+        D
+      </li>
+      <li data-note="E3" class="key">E</li>
+      <li data-note="F3" class="key">
+        <div data-note="F#3" class="black-key" id="black-key">F#</div>
+        F
+      </li>
+      <li data-note="G3" class="key">
+        <div data-note="G#3" class="black-key" id="black-key">G#</div>
+        G
+      </li>
+      <li data-note="A3" class="key">
+        <div data-note="A#3" class="black-key" id="black-key">A#</div>
+        A
+      </li>
+      <li data-note="B3" class="key">B</li>
+
       <li data-note="C4" class="key">
         <div data-note="C#4" class="black-key" id="black-key">C#</div>
         C
@@ -78,6 +101,77 @@
         A
       </li>
       <li data-note="B4" class="key">B</li>
+
+      <li data-note="C5" class="key">
+        <div data-note="C#5" class="black-key" id="black-key">C#</div>
+        C
+      </li>
+      <li data-note="D5" class="key">
+        <div data-note="D#5" class="black-key" id="black-key">D#</div>
+        D
+      </li>
+      <li data-note="E5" class="key">E</li>
+      <li data-note="F5" class="key">
+        <div data-note="F#5" class="black-key" id="black-key">F#</div>
+        F
+      </li>
+      <li data-note="G5" class="key">
+        <div data-note="G#5" class="black-key" id="black-key">G#</div>
+        G
+      </li>
+      <li data-note="A5" class="key">
+        <div data-note="A#5" class="black-key" id="black-key">A#</div>
+        A
+      </li>
+      <li data-note="B5" class="key">B</li>
+
+      <li data-note="C6" class="key">
+        <div data-note="C#5" class="black-key" id="black-key">C#</div>
+        C
+      </li>
+      <li data-note="D6" class="key">
+        <div data-note="D#5" class="black-key" id="black-key">D#</div>
+        D
+      </li>
+      <li data-note="E6" class="key">E</li>
+      <li data-note="F6" class="key">
+        <div data-note="F#6" class="black-key" id="black-key">F#</div>
+        F
+      </li>
+      <li data-note="G6" class="key">
+        <div data-note="G#6" class="black-key" id="black-key">G#</div>
+        G
+      </li>
+      <li data-note="A6" class="key">
+        <div data-note="A#6" class="black-key" id="black-key">A#</div>
+        A
+      </li>
+      <li data-note="B6" class="key">B</li>
+
+      <li data-note="C7" class="key">
+        <div data-note="C#7" class="black-key" id="black-key">C#</div>
+        C
+      </li>
+      <li data-note="D7" class="key">
+        <div data-note="D#7" class="black-key" id="black-key">D#</div>
+        D
+      </li>
+      <li data-note="E7" class="key">E</li>
+      <li data-note="F7" class="key">
+        <div data-note="F#7" class="black-key" id="black-key">F#</div>
+        F
+      </li>
+      <li data-note="G7" class="key">
+        <div data-note="G#7" class="black-key" id="black-key">G#</div>
+        G
+      </li>
+      <li data-note="A7" class="key">
+        <div data-note="A#7" class="black-key" id="black-key">A#</div>
+        A
+      </li>
+      <li data-note="B7" class="key">B</li>
+
+      <li data-note="C8" class="key">C</li>
     </ul>
     <script src="https://unpkg.com/tone@13.8.25/build/Tone.js"></script>
     <script src="../src/index.js" type="module"></script>
